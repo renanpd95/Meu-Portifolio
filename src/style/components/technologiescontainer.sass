@@ -1,0 +1,77 @@
+@use '../variables'
+@use '../mixins'
+
+
+.technologies-container
+    margin-bottom: 1rem
+
+    .technologies-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+        .technology-card
+            @include mixins.center
+            cursor: pointer
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #333
+            width: 30%
+            border-radius: variables.$card-border-radius
+            transition: all 0.2s ease-in-out
+            :hover
+                animation: swing 1s ease
+                animation-iteration-count: 1
+                @keyframes swing 
+                    15% 
+                        ransform: translateX(5px)
+                    
+                    30% 
+                        transform: translateX(-5px)
+                    
+                    50% 
+                        transform: translateX(3px)
+                    
+                    65% 
+                        transform: translateX(-3px)
+                    
+                    80% 
+                        transform: translateX(2px)
+                    
+                    100% 
+                        transform: translateX(0)
+                    
+
+            h3
+                color: variables.$text-color
+                margin-bottom: 1rem
+                margin-top: 1rem
+
+            svg
+                font-size: 3rem
+        
+        #html
+            svg
+                color: #E44d26
+        #css
+            svg
+                color: #1572b6
+        #js
+            svg
+                color: #f0db4f
+        #bootstrap
+            svg
+                color: #1828bb
+        #sass
+            svg
+                color: #e20071
+        #materialize
+            svg
+                color: #ee6e73
+        #node
+            svg
+                color: #43853d
+        #react
+            svg
+                color: #61dafb
+    

@@ -1,0 +1,54 @@
+@use '../variables'
+@use '../mixins'
+
+.projects-container
+    min-width: 100%
+   
+    @media (max-width:900px)
+        max-width: 100%    
+        
+h2
+    @media (max-width:900px)
+        flex-wrap: wrap
+    
+.project-grid
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    width: 100%
+    padding: 0%
+    
+
+    img
+        width: 100%   
+        height: auto 
+        cursor: pointer
+        background-color: variables.$bg-color-secondary      
+        border-radius: variables.$card-border-radius
+    @media (max-width:900px)
+        width: 100% 
+        flex-wrap: wrap
+        height: auto
+        
+.project-card
+    padding: 4px
+    :hover
+        background: variables.$gradient
+        border-radius: 20px
+    
+
+        
+    p
+        color: variables.$text-color
+        
+
+    
+    
+
+    
+        
+
+    
+        
+        
