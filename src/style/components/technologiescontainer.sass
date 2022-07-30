@@ -9,6 +9,8 @@
         display: flex
         flex-wrap: wrap
         gap: 1.5rem
+    
+        
 
         .technology-card
             @include mixins.center
@@ -74,4 +76,18 @@
         #react
             svg
                 color: #61dafb
+        @media (max-width:900px)
+            h3
+                
+                display: none
+            svg
+                width: 100px
+                flex-wrap: wrap
+                
+            .technology-card
+                gap: 0
+                width: 40%
+                flex-wrap: wrap
+                padding: 0
     
+            
